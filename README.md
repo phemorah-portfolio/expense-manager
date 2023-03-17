@@ -39,6 +39,6 @@ To deploy this project run
 
   * run php artisan serve to start your local server
 
-  npm run deploy
+  
 ```
 
