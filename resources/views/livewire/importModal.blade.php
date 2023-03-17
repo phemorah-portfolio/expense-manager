@@ -17,11 +17,11 @@
 
       </label>
       <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="file" wire:model="excelFile">
-      @error('file') <span class="text-red-500 text-xs italic">{{ $message }}</span> @enderror
-      <br><small><strong>File Type:</strong> xlsl, xls</small>
+      @error('excelFile') <span class="text-red-500 text-xs italic">{{ $message }}</span> @enderror
+      <br><small><strong>File Type:</strong> xlsx, xls</small>
     </div>
   </div>
-  <a href="#" class="btn btn-sm btn-success">Sample Template</a>
+  <a href="{{ asset('sample-expense-doc.xlsx')}}" class="btn btn-sm btn-success">Sample Template</a>
 
                 </div>
                 <div class="modal-footer">

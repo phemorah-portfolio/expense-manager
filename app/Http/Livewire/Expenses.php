@@ -52,7 +52,6 @@ class Expenses extends Component
         $this->validate([
             'excelFile' => 'required|mimes:xlsx, xls'
         ]);
-
         Excel::import(new ExpenseImport, $this->excelFile);
         session()->flash('success', 'Expenses were imported successfully');
 

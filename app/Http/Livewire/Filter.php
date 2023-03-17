@@ -11,6 +11,7 @@ class Filter extends Component
     public $checked = [];
     public $status = [];
 
+    public $date_from, $to_date;
 
     public function render()
     {

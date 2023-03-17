@@ -13,7 +13,7 @@
         <x-datetime-picker
       placeholder="To Date"
       parse-format="YYYY-MM-DD HH:mm"
-      wire:model.defer="to_from"
+      wire:model.defer="to_date"
       class="appearance-none block w-full_ bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-2 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
       />
 </div>

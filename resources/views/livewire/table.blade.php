@@ -36,6 +36,13 @@
     @endif
 </div>
 
+    <button type="button" class="ml-2 float-left bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded float-end" data-bs-toggle="modal" data-bs-target="#importModal">
+        Import
+    </button>
+    <button type="button" class="ml-5_ float-left bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded float-end" data-bs-toggle="modal" data-bs-target="#expenseModal">
+        New Expense
+    </button>
+
 <div class="flex carbody table-responsive p-0">
 <table class="table table-hover">
 <tbody>
@@ -49,7 +56,7 @@
         <th></th>
     </tr>
     @foreach($expenses as $expense)
-    <tr class="@if ($this->isChecked($expense->id)) table-primary @endif">
+    <tr class="@if ($this->isChecked($expense->id)) table-primary @endif" wire:click="">
         <td><input type="checkbox" value="{{ $expense->id }}" wire:model="checked"></td>
         <td>{{ Carbon\Carbon::parse($expense->date)->diffForHumans() }}</td>
         <td>{{ $expense->merchant->name }}</td>

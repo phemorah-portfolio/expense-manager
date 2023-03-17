@@ -12,7 +12,6 @@ class Expense extends Model
 
     protected $fillable = ['total','merchant_id','date','comment','receipt','status'];
 
-
     public function scopeSearch($query, $term){
         $term = "%$term%";
         $return = $query->where(function($query) use ($term){
