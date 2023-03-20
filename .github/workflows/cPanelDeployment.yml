@@ -17,6 +17,6 @@ jobs:
         server: ${{ secrets.server }}
         username: ${{ secrets.username }}
         password: ${{ secrets.password }}
-    - run: |
-      npm install
-      npm run build dev
+    - run:
+        npm install
+        npm run build dev
