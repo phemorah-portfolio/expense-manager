@@ -17,5 +17,3 @@ jobs:
         server: ${{ secrets.server }}
         username: ${{ secrets.username }}
         password: ${{ secrets.password }}
-    - run:
-        npm run dev
