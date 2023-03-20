@@ -19,4 +19,4 @@ jobs:
         password: ${{ secrets.password }}
     - run:
         npm install
-        npm run build dev
+        npm run dev
